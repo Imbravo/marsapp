@@ -1,6 +1,4 @@
-import { Component, OnChanges, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { LanguageService } from '../../services/language.service'
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,19 +6,10 @@ import { LanguageService } from '../../services/language.service'
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  constructor(private translate: TranslateService, private languageService: LanguageService) { }
 
-  language: string='';
+  constructor() { }
 
   ngOnInit(): void {
-    //console.log(this.languageService.getLanguage());
-
-
-    
   }
-
-
-
-
 
 }

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "mars-app-61bcc": {
+      "hosting": {
+        "mars-app": [
+          "mars-app-61bcc"
+        ]
+      }
+    }
+  }
+}

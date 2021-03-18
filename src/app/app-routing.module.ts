@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LanguageService } from '../../src/app/services/language.service'
-const routes: Routes = [{ path: '', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)}
+import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+
+
+const routes: Routes = [
+  {path: '', component: HomeComponent},
+  {path: 'contact', component: ContactComponent}
 ];
 
 

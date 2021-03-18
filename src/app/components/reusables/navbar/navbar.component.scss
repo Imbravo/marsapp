@@ -1,0 +1,27 @@
+.logo-img {
+  border-radius: 20px;
+}
+
+.nav-color {
+  //background-color: #014700;
+  //background-color: #43d1e0;
+  //background-color: #1c555c;
+  //background-color: #00afdb;
+  background-color: #4a4a4a;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.nav-link::before {
+  font-size: 1.2rem;
+  color: rgb(234, 239, 240, 0.92) !important;
+}
+
+.nav-item:hover {
+  .nav-link {
+    font-size: 1.2rem;
+    color: white !important;
+  }
+}

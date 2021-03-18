@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { Observable } from 'rxjs';
 import { LanguageService } from '../../../services/language.service'
 @Component({
   selector: 'app-navbar',
@@ -15,20 +14,13 @@ export class NavbarComponent implements OnInit {
     this.translate.setDefaultLang('en');
   }
 
+  //Sets the current selected language in localstorage and uses ngx-translate service to translate. 
+  //Params: String from event. 
   switchLanguage(language: string) {
     this.languageService.setLanguage(language);
-    //console.log(this.languageService.getLanguage());
     this.translate.use(language);
-
-    this.translate.onLangChange.subscribe(() => {
-      // do something
-      //console.log('test');
-    });
-
-
+    localStorage.setItem('lang',language);
   }
-
-
 
 
 }

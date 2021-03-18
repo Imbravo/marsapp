@@ -1,0 +1,75 @@
+.carousel-item {
+  height: 90vh;
+  //width: 100vh;
+  background: center center no-repeat;
+  background-size: cover;
+}
+
+.container-fluid {
+  padding: 0rem;
+}
+
+.card {
+  border: none;
+}
+
+.img-border {
+  border-radius: 20px;
+}
+
+.side-pic {
+  //padding-left: 1rem;
+  //padding-right: 1rem;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+.btn-card-custom {
+  background-color: #00afdb;
+  color: white;
+}
+
+.btn-card-custom:hover {
+  transition: 0.5s;
+  background-color: #057b99;
+}
+
+.flex-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-row {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+/* container for the carousel
+.flex-container{
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+*/
+
+.background-skip {
+  background-color: #d9d9d9;
+}
+
+.card-row {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}

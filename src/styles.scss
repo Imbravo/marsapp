@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+.body {
+  overflow-x: hidden;
+  $font-family-base: "Open Sans", sans-serif;
+}
+
+@mixin custom-button-style {
+  $btn-custom-color: #00afdb;
+  color: white;
+}
