@@ -7,6 +7,7 @@ export const environment = {
   firebaseConfig: {
     apiKey: "AIzaSyDZ5kAA4Xumk2TjDW0qwiv5JLWIp0i3JYQ",
     authDomain: "mars-app-61bcc.firebaseapp.com",
+    databaseURL: "https://mars-app-61bcc-default-rtdb.firebaseio.com",
     projectId: "mars-app-61bcc",
     storageBucket: "mars-app-61bcc.appspot.com",
     messagingSenderId: "714212654179",
