@@ -20,6 +20,14 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BathtubeRefinishingComponent } from './components/product-services/bathtube-refinishing/bathtube-refinishing.component';
+import { BathtubeReglazingComponent } from './components/product-services/bathtube-reglazing/bathtube-reglazing.component';
+import { ReglaseTilesComponent } from './components/product-services/reglase-tiles/reglase-tiles.component';
+import { ContertopsComponent } from './components/product-services/contertops/contertops.component';
+import { VanityComponent } from './components/product-services/vanity/vanity.component';
+import { ProductsUsedComponent } from './components/products-used/products-used.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { QuotesComponent } from './components/quotes/quotes.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -33,6 +41,14 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     HomeComponent,
     ContactComponent,
+    BathtubeRefinishingComponent,
+    BathtubeReglazingComponent,
+    ReglaseTilesComponent,
+    ContertopsComponent,
+    VanityComponent,
+    ProductsUsedComponent,
+    AboutUsComponent,
+    QuotesComponent,
   ],
   imports: [
     BrowserModule,
