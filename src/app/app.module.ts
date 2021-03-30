@@ -20,6 +20,9 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 import { FormsModule } from '@angular/forms';
+import { TilestopComponent } from './components/products/tilestop/tilestop.component';
+import { CountertopscabinetsComponent } from './components/products/countertopscabinets/countertopscabinets.component';
+import { VanityComponent } from './components/products/vanity/vanity.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -33,6 +36,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     HomeComponent,
     ContactComponent,
+    TilestopComponent,
+    CountertopscabinetsComponent,
+    VanityComponent,
   ],
   imports: [
     BrowserModule,
