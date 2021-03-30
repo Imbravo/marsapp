@@ -5,18 +5,18 @@
           <p class="display-4">Contact us</p>
     
       </div>
-      <form class="row g-3">
+      <form class="row g-3" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="marsito@mars.com">
+          <input type="email" class="form-control" id="inputEmail4" placeholder="marsito@mars.com" formControlName="email">
         </div>
         <div class="col-md-6">
           <label for="inputPassword4" class="form-label">Name</label>
-          <input type="text" class="form-control" id="inputPassword4" placeholder="marianito">
+          <input type="text" class="form-control" id="inputPassword4" placeholder="marianito" formControlName="name">
         </div>
         <div class="col-12">
           <label for="inputAddress" class="form-label">How can we help you?</label>
-          <textarea type="text" class="form-control" id="inputAddress" placeholder="tell us about your needs" cols="30" rows="5"></textarea>
+          <textarea type="text" class="form-control" id="inputAddress" placeholder="tell us about your needs" cols="30" rows="5" formControlName="text"></textarea>
          
         </div>
 

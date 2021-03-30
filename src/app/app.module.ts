@@ -19,10 +19,10 @@ import { ContactComponent } from './components/contact/contact.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
-import { FormsModule } from '@angular/forms';
 import { TilestopComponent } from './components/products/tilestop/tilestop.component';
 import { CountertopscabinetsComponent } from './components/products/countertopscabinets/countertopscabinets.component';
 import { VanityComponent } from './components/products/vanity/vanity.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -43,6 +43,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     AppRoutingModule,

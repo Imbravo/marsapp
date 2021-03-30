@@ -4,8 +4,7 @@ import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/fire
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Contact } from 'src/app/classes/contact';
-
-
+import { SubmissionService } from '../../services/sumission.service';
 
 
 @Component({
@@ -14,15 +13,16 @@ import { Contact } from 'src/app/classes/contact';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  contactForm: FormGroup | undefined;
+  contactForm!: FormGroup;
 
 
-  constructor(firestore: AngularFirestore, private fb: FormBuilder) {
+  constructor(firestore: AngularFirestore, private fb: FormBuilder, private submissionService: SubmissionService) {
 
 
    }
 
   ngOnInit(): void {
+    this.createForm();
   }
 
 
@@ -39,6 +39,10 @@ export class ContactComponent implements OnInit {
     });
   }
 
+  onSubmit(){
+    this.submissionService.createSubmission(this.contactForm.value);
+    console.log('test submit', this.contactForm.value);
 
+  }
 
 }
