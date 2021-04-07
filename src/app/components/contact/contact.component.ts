@@ -19,19 +19,19 @@ export class ContactComponent implements OnInit {
   constructor(firestore: AngularFirestore, private fb: FormBuilder, private submissionService: SubmissionService) {
 
 
-   }
+  }
 
   ngOnInit(): void {
     this.createForm();
   }
 
 
-  addContact(contact: Contact){
+  addContact(contact: Contact) {
 
 
   }
 
-  createForm(){
+  createForm() {
     this.contactForm = this.fb.group({
       email: [''],
       name: [''],
@@ -39,9 +39,9 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  onSubmit(){
+  onSubmit() {
     this.submissionService.createSubmission(this.contactForm.value);
-    console.log('test submit', this.contactForm.value);
+    //console.log('test submit', this.contactForm.value);
 
   }
 
